@@ -6,7 +6,7 @@
 
 <br><br>
 
-# 12- [Data Mining]()  / [ K-Means Clustering Repository Presentation]()
+# 12- [Data Mining]()  / [Project 2 – Clustering Algorithms Exploration and Comparison]()
 
 
 
