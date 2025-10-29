@@ -201,6 +201,18 @@ print(f"🇧🇷 Duplicados removidos: {initial_rows - rows_after_duplicates}")
 
 <br><br>
 
+### 7. **Display the preprocessed DataFrame / Mostrar o DataFrame após processamento**
+
+<br>
+
+```python
+display(df.head())
+num_rows_preprocessed, num_cols_preprocessed = df.shape
+print(f"🇬🇧 After preprocessing: {num_rows_preprocessed} rows, {num_cols_preprocessed} columns")
+print(f"🇧🇷 Após o pré-processamento: {num_rows_preprocessed} linhas, {num_cols_preprocessed} colunas")
+```
+
+<br><br>
 
 
 
