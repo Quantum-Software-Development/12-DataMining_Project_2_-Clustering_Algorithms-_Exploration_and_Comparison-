@@ -160,142 +160,16 @@ else:
 
 <br><br>
 
-### 4. **Fill missing values with column median**
-
-<br>
-
-**🇬🇧 Check for missing values and fill them with the median of each column.**
-**🇧🇷 Verifique valores faltantes e preencha com a mediana de cada coluna.**
-
-<br>
-
+### 4. **Show missing values before filling / Mostrar valores faltantes antes de preencher**
 
 ```python
-column_medians = df.median()
-df.fillna(column_medians, inplace=True)
-print("🇬🇧 Missing values filled with medians. 🇧🇷 Valores faltantes preenchidos com as medianas.")
-```
-
-<br><br>
-
-
-### 5. **Remove duplicate rows**
-
-<br>
-
-**🇬🇧 Check for and remove duplicate records.**
-**🇧🇷 Verifique e remova registros duplicados.**
-
-<br>
-
-```python
-initial_rows = df.shape[0]
-df.drop_duplicates(inplace=True)
-rows_after_duplicates = df.shape[0]
-print(f"🇬🇧 Duplicates removed: {initial_rows - rows_after_duplicates}")
-print(f"🇧🇷 Duplicados removidos: {initial_rows - rows_after_duplicates}")
-```
-
-<br><br>
-
-### 6. **Display the preprocessed DataFrame**
-
-<br>
-
-**🇬🇧 Show first rows after preprocessing.**
-**🇧🇷 Mostre as primeiras linhas após o pré-processamento.**
-
-<br>
-
-```python
-display(df.head())
-num_rows_preprocessed, num_cols_preprocessed = df.shape
-print(f"🇬🇧 After preprocessing: {num_rows_preprocessed} rows, {num_cols_preprocessed} columns")
-print(f"🇧🇷 Após o pré-processamento: {num_rows_preprocessed} linhas, {num_cols_preprocessed} colunas")
+print("🇬🇧 Missing values per column before filling:")
+print("🇧🇷 Valores faltantes por coluna antes do preenchimento:")
+print(df.isnull().sum())
 ```
 
 
 <br><br>
-
-
-### 7. **Scatter Plot** - ColunScatter Plot of Coluna1 vs Coluna2 - Gráfico de Dispersão de Coluna1 vs Coluna2a1', y='Coluna2png
-
-<br>
-
-<img width="1002" height="699" alt="Image" src="https://github.com/user-attachments/assets/b983a001-187c-4b20-bdac-75473ed6235f" />
-
-<br>
-
-
-```python
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-sns.set_style('darkgrid')
-sns.set_palette('viridis')
-
-plt.figure(figsize=(12, 8))
-sns.scatterplot(data=df, x='Coluna1', y='Coluna2')
-plt.title('Scatter Plot of Coluna1 vs Coluna2 / Gráfico de Dispersão Coluna1 vs Coluna2')
-plt.show()
-```
-
-
-<br><br>
-
-
-
-### 8. **Standardize features**  -KMeans Inertia vs Number of Clusters - KMeans Inércia vs Número de Clusters
-
-<br>
-
-**🇬🇧 Standardize columns for clustering.**
-**🇧🇷 Padronize as colunas para agrupamento.**
-
-<br>
-
-
-```python
-from sklearn.preprocessing import StandardScaler
-
-scaler = StandardScaler()
-df[['Coluna1', 'Coluna2']] = scaler.fit_transform(df[['Coluna1', 'Coluna2']])
-```
-
-<br><br>
-
-
-### 9. **K-Means clustering and optimal K**
-
-
-<img width="1010" height="545" alt="Image" src="https://github.com/user-attachments/assets/e6882ce1-d97c-48b3-b1c9-4826a0e486a9" />
-```python
-from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score
-
-inertia = []
-silhouette = []
-K = []
-
-for k in range(2, 11):
-    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
-    kmeans_labels = kmeans.fit(df)
-    inertia.append(kmeans_labels.inertia_)
-    silhouette.append(silhouette_score(df, kmeans_labels.labels_))
-    K.append(k)
-
-plt.figure(figsize=(12, 6))
-sns.lineplot(x=K, y=inertia, marker='o')
-plt.title('KMeans Inertia vs Number of Clusters / Inércia vs Número de Clusters')
-plt.xlabel('Clusters (K)')
-plt.ylabel('Inertia')
-plt.show()
-```
-
-
-<br><br>
-
-
 
 
 
