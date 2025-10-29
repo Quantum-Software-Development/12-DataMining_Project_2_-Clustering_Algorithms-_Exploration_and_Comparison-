@@ -108,9 +108,25 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 <br><br>
 
 
+## 🚦 Steps/Células do Código
 
 
+### 1. **Import pandas and load the dataset**
 
+<br>
+
+**🇬🇧 Import the pandas library and load your group's dataset.**
+**🇧🇷 Importe a biblioteca pandas e carregue o dataset do seu grupo.**
+
+<br><br>
+
+```python
+import pandas as pd
+df = pd.read_csv('Grupo4.csv')
+df.head()
+```
+
+<br><br>
 
 
 
