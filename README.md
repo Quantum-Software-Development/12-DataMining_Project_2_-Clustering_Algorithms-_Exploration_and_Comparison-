@@ -110,6 +110,8 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 
 ## 🚦 Steps/Células do Código
 
+<br>
+
 
 ### 1. **Import pandas and load the dataset**
 
@@ -129,10 +131,46 @@ df.head()
 <br><br>
 
 
+### 2. **Display dataset dimensions and statistics**
+
+<br>
+
+**🇬🇧 Show the number of rows and columns, and display basic statistical measures.**
+**🇧🇷 Mostre o número de linhas e colunas, e exiba as medidas estatísticas básicas.**
 
 
+<br><br>
 
 
+```python
+num_rows, num_cols = df.shape
+print(f"🇬🇧 Number of rows: {num_rows}, Number of columns: {num_cols}")
+print(f"🇧🇷 Número de linhas: {num_rows}, Número de colunas: {num_cols}")
+display(df.describe())
+```
+
+<br><br>
+
+
+### 3. **Remove 'Unnamed: 0' column if exists**
+
+<br>
+
+**🇬🇧 Remove the 'Unnamed: 0' column if present.**
+**🇧🇷 Remova a coluna 'Unnamed: 0' caso exista
+
+<br><br>
+
+```python
+if 'Unnamed: 0' in df.columns:
+    df.drop('Unnamed: 0', axis=1, inplace=True)
+    print("🇬🇧 'Unnamed: 0' column dropped. 🇧🇷 Coluna 'Unnamed: 0' removida.")
+else:
+    print("🇬🇧 'Unnamed: 0' column not found. 🇧🇷 Coluna 'Unnamed: 0' não encontrada.")
+```
+
+
+<br><br>
 
 
 
