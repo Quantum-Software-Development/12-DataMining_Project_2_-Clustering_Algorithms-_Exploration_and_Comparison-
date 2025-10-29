@@ -94,15 +94,18 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 
 
 
-## Introduction / Introdução
 
 
-*🇬🇧 This code performs an exploratory and clustering analysis of the dataset "Grupo4.csv" for a classroom project. It includes data cleaning, preprocessing, and applies three clustering algorithms (K-Means, Mean-Shift, Affinity Propagation), visualizing and comparing the results in Python.
+
+# 📚 Overview / Visão Geral
 
 <br>
 
+**🇬🇧 This code performs an exploratory and clustering analysis of the dataset "Grupo4.csv" for a classroom project. It includes data cleaning, preprocessing, and applies three clustering algorithms (K-Means, Mean-Shift, Affinity Propagation), visualizing and comparing the results in Python.**
 
-🇧🇷 Este código realiza uma análise exploratória e de agrupamento no dataset "Grupo4.csv" para um projeto de sala de aula. Inclui limpeza e pré-processamento dos dados, além de aplicar três algoritmos de agrupamento (K-Means, Mean-Shift, Propagação por Afinidade), visualizando e comparando os resultados em Python.
+<br>
+
+**🇧🇷 Este código realiza uma análise exploratória e de agrupamento no dataset "Grupo4.csv" para um projeto de sala de aula. Inclui limpeza e pré-processamento dos dados, além de aplicar três algoritmos de agrupamento (K-Means, Mean-Shift, Propagação por Afinidade), visualizando e comparando os resultados em Python.**
 
 
 <br>
@@ -112,13 +115,8 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 
 <br>
 
+### 1. **Import pandas and load the dataset / Importar pandas e carregar o dataset**
 
-### 1. **Import pandas and load the dataset**
-
-<br>
-
-**🇬🇧 Import the pandas library and load your group's dataset.**
-**🇧🇷 Importe a biblioteca pandas e carregue o dataset do seu grupo.**
 
 <br>
 
