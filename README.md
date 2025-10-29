@@ -177,7 +177,7 @@ print(df.isnull().sum())
 
 ### 5. **Fill missing values with column median / Preencher valores faltantes com a mediana**
 
-br>
+<br>
 
 ```python
 column_medians = df.median()
