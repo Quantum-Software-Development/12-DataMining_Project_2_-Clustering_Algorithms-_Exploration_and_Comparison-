@@ -230,7 +230,7 @@ print(f"🇧🇷 Após o pré-processamento: {num_rows_preprocessed} linhas, {nu
 <br><br>
 
 
-### 7. **Scatter Plot**
+### 7. **Scatter Plot** - ColunScatter Plot of Coluna1 vs Coluna2 - Gráfico de Dispersão de Coluna1 vs Coluna2a1', y='Coluna2png
 
 <br>
 
@@ -257,7 +257,19 @@ plt.show()
 
 
 
+### 8. **Standardize features**
 
+**🇬🇧 Standardize columns for clustering.**
+**🇧🇷 Padronize as colunas para agrupamento.**
+
+```python
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+df[['Coluna1', 'Coluna2']] = scaler.fit_transform(df[['Coluna1', 'Coluna2']])
+```
+
+<br><br>
 
 
 
