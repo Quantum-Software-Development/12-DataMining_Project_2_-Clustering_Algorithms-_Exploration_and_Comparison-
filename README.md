@@ -193,8 +193,12 @@ print("🇬🇧 Missing values filled with medians. 🇧🇷 Valores faltantes p
 
 ### 5. **Remove duplicate rows**
 
+<br>
+
 **🇬🇧 Check for and remove duplicate records.**
 **🇧🇷 Verifique e remova registros duplicados.**
+
+<br>
 
 ```python
 initial_rows = df.shape[0]
@@ -205,6 +209,30 @@ print(f"🇧🇷 Duplicados removidos: {initial_rows - rows_after_duplicates}")
 ```
 
 <br><br>
+
+### 6. **Display the preprocessed DataFrame**
+
+<br>
+
+**🇬🇧 Show first rows after preprocessing.**
+**🇧🇷 Mostre as primeiras linhas após o pré-processamento.**
+
+<br>
+
+```python
+display(df.head())
+num_rows_preprocessed, num_cols_preprocessed = df.shape
+print(f"🇬🇧 After preprocessing: {num_rows_preprocessed} rows, {num_cols_preprocessed} columns")
+print(f"🇧🇷 Após o pré-processamento: {num_rows_preprocessed} linhas, {num_cols_preprocessed} colunas")
+```
+
+
+<br><br>
+
+
+
+
+
 
 
 
