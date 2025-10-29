@@ -230,9 +230,30 @@ print(f"🇧🇷 Após o pré-processamento: {num_rows_preprocessed} linhas, {nu
 <br><br>
 
 
+### 7. **Scatter Plot**
+
+<br>
+
+<img width="1002" height="699" alt="Image" src="https://github.com/user-attachments/assets/b983a001-187c-4b20-bdac-75473ed6235f" />
+
+<br>
 
 
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+sns.set_style('darkgrid')
+sns.set_palette('viridis')
+
+plt.figure(figsize=(12, 8))
+sns.scatterplot(data=df, x='Coluna1', y='Coluna2')
+plt.title('Scatter Plot of Coluna1 vs Coluna2 / Gráfico de Dispersão Coluna1 vs Coluna2')
+plt.show()
+```
+
+
+<br><br>
 
 
 
