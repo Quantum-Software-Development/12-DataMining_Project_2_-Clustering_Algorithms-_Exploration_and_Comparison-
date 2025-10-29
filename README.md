@@ -187,8 +187,19 @@ print("🇬🇧 Missing values filled with medians. 🇧🇷 Valores faltantes p
 
 <br><br>
 
+### 6. **Remove duplicate rows / Remover registros duplicados**
 
+<br>
 
+```python
+initial_rows = df.shape[0]
+df.drop_duplicates(inplace=True)
+rows_after_duplicates = df.shape[0]
+print(f"🇬🇧 Duplicates removed: {initial_rows - rows_after_duplicates}")
+print(f"🇧🇷 Duplicados removidos: {initial_rows - rows_after_duplicates}")
+```
+
+<br><br>
 
 
 
