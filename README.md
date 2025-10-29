@@ -129,12 +129,7 @@ df.head()
 <br><br>
 
 
-### 2. **Display dataset dimensions and statistics**
-
-<br>
-
-**🇬🇧 Show the number of rows and columns, and display basic statistical measures.**
-**🇧🇷 Mostre o número de linhas e colunas, e exiba as medidas estatísticas básicas.**
+### 2. **Display dataset dimensions and statistics / Mostrar dimensões e estatísticas do dataset**
 
 
 <br>
