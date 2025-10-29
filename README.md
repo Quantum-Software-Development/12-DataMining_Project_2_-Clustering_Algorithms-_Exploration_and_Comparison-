@@ -277,16 +277,41 @@ df[['Coluna1', 'Coluna2']] = scaler.fit_transform(df[['Coluna1', 'Coluna2']])
 <br><br>
 
 
-
-
-
-
-
-
-
+### 9. **K-Means clustering and optimal K**
 
 
 <img width="1010" height="545" alt="Image" src="https://github.com/user-attachments/assets/e6882ce1-d97c-48b3-b1c9-4826a0e486a9" />
+```python
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
+
+inertia = []
+silhouette = []
+K = []
+
+for k in range(2, 11):
+    kmeans = KMeans(n_clusters=k, random_state=42, n_init=10)
+    kmeans_labels = kmeans.fit(df)
+    inertia.append(kmeans_labels.inertia_)
+    silhouette.append(silhouette_score(df, kmeans_labels.labels_))
+    K.append(k)
+
+plt.figure(figsize=(12, 6))
+sns.lineplot(x=K, y=inertia, marker='o')
+plt.title('KMeans Inertia vs Number of Clusters / Inércia vs Número de Clusters')
+plt.xlabel('Clusters (K)')
+plt.ylabel('Inertia')
+plt.show()
+```
+
+
+<br><br>
+
+
+
+
+
+
 
 
 
