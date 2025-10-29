@@ -105,7 +105,7 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 🇧🇷 Este código realiza uma análise exploratória e de agrupamento no dataset "Grupo4.csv" para um projeto de sala de aula. Inclui limpeza e pré-processamento dos dados, além de aplicar três algoritmos de agrupamento (K-Means, Mean-Shift, Propagação por Afinidade), visualizando e comparando os resultados em Python.
 
 
-<br><br>
+<br>
 
 
 ## 🚦 Steps/Células do Código
@@ -120,7 +120,7 @@ https://github.com/user-attachments/assets/4ccd316b-74a1-4bae-9bc7-1c705be80498
 **🇬🇧 Import the pandas library and load your group's dataset.**
 **🇧🇷 Importe a biblioteca pandas e carregue o dataset do seu grupo.**
 
-<br><br>
+<br>
 
 ```python
 import pandas as pd
@@ -128,7 +128,7 @@ df = pd.read_csv('Grupo4.csv')
 df.head()
 ```
 
-<br><br>
+<br>
 
 
 ### 2. **Display dataset dimensions and statistics**
@@ -139,7 +139,7 @@ df.head()
 **🇧🇷 Mostre o número de linhas e colunas, e exiba as medidas estatísticas básicas.**
 
 
-<br><br>
+<br>
 
 
 ```python
@@ -149,7 +149,7 @@ print(f"🇧🇷 Número de linhas: {num_rows}, Número de colunas: {num_cols}")
 display(df.describe())
 ```
 
-<br><br>
+<br>
 
 
 ### 3. **Remove 'Unnamed: 0' column if exists**
@@ -159,7 +159,7 @@ display(df.describe())
 **🇬🇧 Remove the 'Unnamed: 0' column if present.**
 **🇧🇷 Remova a coluna 'Unnamed: 0' caso exista
 
-<br><br>
+<br>
 
 ```python
 if 'Unnamed: 0' in df.columns:
@@ -170,7 +170,28 @@ else:
 ```
 
 
-<br><br>
+<br>
+
+### 4. **Fill missing values with column median**
+
+<br>
+
+**🇬🇧 Check for missing values and fill them with the median of each column.**
+**🇧🇷 Verifique valores faltantes e preencha com a mediana de cada coluna.**
+
+<br>
+
+
+```python
+column_medians = df.median()
+df.fillna(column_medians, inplace=True)
+print("🇬🇧 Missing values filled with medians. 🇧🇷 Valores faltantes preenchidos com as medianas.")
+```
+
+<br>
+
+
+
 
 
 
