@@ -128,7 +128,7 @@ df = pd.read_csv('Grupo4.csv')
 df.head()
 ```
 
-<br>
+<br><br>
 
 
 ### 2. **Display dataset dimensions and statistics**
@@ -149,7 +149,7 @@ print(f"🇧🇷 Número de linhas: {num_rows}, Número de colunas: {num_cols}")
 display(df.describe())
 ```
 
-<br>
+<br><br>
 
 
 ### 3. **Remove 'Unnamed: 0' column if exists**
@@ -170,7 +170,7 @@ else:
 ```
 
 
-<br>
+<br><br>
 
 ### 4. **Fill missing values with column median**
 
@@ -188,11 +188,23 @@ df.fillna(column_medians, inplace=True)
 print("🇬🇧 Missing values filled with medians. 🇧🇷 Valores faltantes preenchidos com as medianas.")
 ```
 
-<br>
+<br><br>
 
 
+### 5. **Remove duplicate rows**
 
+**🇬🇧 Check for and remove duplicate records.**
+**🇧🇷 Verifique e remova registros duplicados.**
 
+```python
+initial_rows = df.shape[0]
+df.drop_duplicates(inplace=True)
+rows_after_duplicates = df.shape[0]
+print(f"🇬🇧 Duplicates removed: {initial_rows - rows_after_duplicates}")
+print(f"🇧🇷 Duplicados removidos: {initial_rows - rows_after_duplicates}")
+```
+
+<br><br>
 
 
 
