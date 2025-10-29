@@ -257,10 +257,15 @@ plt.show()
 
 
 
-### 8. **Standardize features**
+### 8. **Standardize features**  -KMeans Inertia vs Number of Clusters - KMeans Inércia vs Número de Clusters
+
+<br>
 
 **🇬🇧 Standardize columns for clustering.**
 **🇧🇷 Padronize as colunas para agrupamento.**
+
+<br>
+
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -276,6 +281,12 @@ df[['Coluna1', 'Coluna2']] = scaler.fit_transform(df[['Coluna1', 'Coluna2']])
 
 
 
+
+
+
+
+
+<img width="1010" height="545" alt="Image" src="https://github.com/user-attachments/assets/e6882ce1-d97c-48b3-b1c9-4826a0e486a9" />
 
 
 
