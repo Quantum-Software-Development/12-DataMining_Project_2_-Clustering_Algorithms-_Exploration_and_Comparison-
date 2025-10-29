@@ -144,13 +144,8 @@ display(df.describe())
 
 <br><br>
 
+### 3. **Remove 'Unnamed: 0' column (if exists) / Remover coluna 'Unnamed: 0' (se existir)**
 
-### 3. **Remove 'Unnamed: 0' column if exists**
-
-<br>
-
-**🇬🇧 Remove the 'Unnamed: 0' column if present.**
-**🇧🇷 Remova a coluna 'Unnamed: 0' caso exista
 
 <br>
 
