@@ -162,6 +162,9 @@ else:
 
 ### 4. **Show missing values before filling / Mostrar valores faltantes antes de preencher**
 
+<br>
+
+
 ```python
 print("🇬🇧 Missing values per column before filling:")
 print("🇧🇷 Valores faltantes por coluna antes do preenchimento:")
@@ -172,8 +175,17 @@ print(df.isnull().sum())
 <br><br>
 
 
+### 5. **Fill missing values with column median / Preencher valores faltantes com a mediana**
 
+br>
 
+```python
+column_medians = df.median()
+df.fillna(column_medians, inplace=True)
+print("🇬🇧 Missing values filled with medians. 🇧🇷 Valores faltantes preenchidos com as medianas.")
+```
+
+<br><br>
 
 
 
