@@ -5,7 +5,7 @@
 
 <br><br>
 
-# 12- [Data Mining]()  / [Project 2 – Clustering Algorithms Exploration and Comparison]()
+# 12- [Data Mining]()  / [Project 2 – Clustering Algorithms Exploration and Comparison]() - - K-Means - Mean-Shift - Affinity Propagation
 
 
 
