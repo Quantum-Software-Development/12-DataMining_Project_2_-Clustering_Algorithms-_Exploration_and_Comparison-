@@ -236,33 +236,6 @@ plt.show()
 
 
 
-
-<br><br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
-
-
 ## 21-  [Our Crew:]()
 
 
